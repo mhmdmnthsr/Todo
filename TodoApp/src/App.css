@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  background: linear-gradient(135deg, #f9f7ff, #eaf7ff, #fef9f9);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  }
+
+.app-container {
+  max-width: 550px;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+.card {
+  background: #fff;
+  border: 2px solid #000; 
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 0px #000;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+.todo-input:focus {
+  border-color: #a5c9ff; 
+}
+
+.add-btn {
+  background: #a5c9ff;
+  color: #222;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.add-btn:hover {
+  background: #7da9ff;
+}
+
+.todo-card {
+  padding-top: 15px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #fafafa;
+  border: 2px solid #ccc;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  transition: background 0.2s;
+}
+
+.todo-item:hover {
+  background: #f0f0f0;
+}
+
+.todo-item span {
+  font-size: 16px;
+  color: #222;
+  flex: 1;
+  margin-right: 10px;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.actions button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.actions button:hover {
+  opacity: 0.9;
+  transform: scale(0.97);
+}
+
+.done-btn {
+  background: #b5e48c; 
+  color: #222;
+}
+
+.done-btn:hover {
+  background: #99d76f;
+}
+
+.delete-btn {
+  background: #f6a5a5; 
+  color: #222;
+}
+
+.delete-btn:hover {
+  background: #f08080;
+}
+
+.clear-container {
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: 10px;
+}
+
+.clear-btn {
+  background: #eee;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;         
+  font-weight: bold;       
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.clear-btn:hover {
+  background: #ddd;
+}
+
+.counter {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #444;
+}
